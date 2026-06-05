@@ -1,0 +1,25 @@
+# Pinned host dependencies for the DLSCA AES-128 key-recovery project.
+# Target interpreter: CPython 3.9-3.11 on macOS (Apple Silicon arm64 or Intel x86_64).
+# For reproducibility end-to-end: exact, == pins only.
+#
+# NOTE: installing these is an approval-gated step. Do not run
+# `pip install -r requirements.txt` without recording the approval in notes/approvals.md.
+
+# Capture + flashing API (drives the ChipWhisperer; supports the SCA101/SCA201 tutorials).
+chipwhisperer==5.7.0
+
+# Numerics + signal processing for CPA, preprocessing, and metrics.
+numpy==1.26.4
+scipy==1.13.1
+
+# Plots backing the writeup figures (results/).
+matplotlib==3.8.4
+
+# CNN profiling model; MPS on Apple Silicon, CPU fallback on Intel.
+torch==2.2.2
+
+# Notebook environment (the runnable, reproducible story).
+jupyterlab==4.1.6
+
+# Host-side unit tests (math verified on host).
+pytest==7.4.4

@@ -1,0 +1,22 @@
+{
+  "approval_ref": "notes/approvals.md#2026-05-31-capture-unprotected",
+  "board": "ChipWhisperer-Nano (CWNANO)",
+  "cw_version": "5.7.0",
+  "date": "2026-05-31",
+  "firmware": "aes-unprotected",
+  "firmware_hash": "sha256:ee9e2630f97037960f24a82b75968cacf623ae6b25395383228ab6d6dc55ec8a",
+  "host_arch": "arm64",
+  "n_samples": 5000,
+  "n_traces": 5000,
+  "name": "unprotected_randomkey",
+  "role": "random-key",
+  "scope": {
+    "adc_clock": "7.5MHz",
+    "gain": null,
+    "sample_rate": 7500000,
+    "samples": 5000,
+    "trigger": "tio/simpleserial"
+  },
+  "seed": 1,
+  "target": "STM32F0 (STM32F0_NANO, built-in)"
+}

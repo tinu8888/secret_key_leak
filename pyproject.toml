@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dlsca"
+version = "0.1.0"
+description = "Host-side DLSCA AES-128 key recovery (CPA control + profiling CNN) and masking-defense analysis for a ChipWhisperer target."
+requires-python = ">=3.9,<3.12"
+readme = "README.md"
+
+# Runtime deps are pinned in requirements.txt. This list is intentionally
+# light so the package metadata stays valid even before the approval-gated environment install.
+dependencies = [
+    "numpy",
+    "scipy",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+# Make src/ importable (so `import dlsca` works) and collect tests from tests/.
+pythonpath = ["src"]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-q"

@@ -1,0 +1,19 @@
+{
+  "correctness": {
+    "roundtrip_ok": true,
+    "n_checked": 300
+  },
+  "safety": {
+    "cpa_recovered": false,
+    "cnn_recovered": false,
+    "cpa_traces_to_rank0": null,
+    "cnn_traces_to_rank0": null
+  },
+  "baseline_unprotected": {
+    "cpa_recovered": true,
+    "cnn_recovered": true,
+    "cpa_traces_to_rank0": 100,
+    "cnn_traces_to_rank0": 12
+  },
+  "verdict": "PASS - data protected AND fully recoverable"
+}
